@@ -2,7 +2,7 @@
 
 > Repositório com exemplos práticos de como utilizar o comando `cy.intercept()` no Cypress para monitorar, manipular e validar requisições de rede (HTTP) em testes de ponta a ponta (E2E).
 
-## 🎯 Objetivo
+## Objetivo
 
 Este projeto demonstra as capacidades do **Cypress 6+** em lidar com chamadas de rede, substituindo os antigos comandos `cy.server()` e `cy.route()`. Com o `cy.intercept()`, é possível:
 
@@ -10,13 +10,13 @@ Este projeto demonstra as capacidades do **Cypress 6+** em lidar com chamadas de
 - **Simular (Stubbing)**: Forçar uma resposta específica (mock) para testar cenários de erro ou estados específicos da interface
 - **Modificar**: Alterar cabeçalhos (headers) ou o corpo da requisição/resposta em tempo real
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - **Cypress** `^13.17.0` - Framework de testes E2E moderno e poderoso
 - **Puppeteer** `^21.9.0` - Biblioteca para automação de navegador headless
 - **JavaScript/Node.js** - Ambiente de execução
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 cy-intercept/
@@ -33,7 +33,7 @@ cy-intercept/
 └── README.md                   # Este arquivo
 ```
 
-## 📦 Instalação
+## Instalação
 
 ### Pré-requisitos
 - Node.js `v14.0.0` ou superior
@@ -57,7 +57,7 @@ cy-intercept/
    npx cypress --version
    ```
 
-## 🚀 Como Usar
+## Como Usar
 
 ### Abrir o Cypress Interactive
 
@@ -83,7 +83,7 @@ Ou com mais opções:
 npx cypress run --headless --browser chrome
 ```
 
-## 💡 Exemplos de Uso
+## Exemplos de Uso
 
 ### 1. Esperando uma Requisição (Spying)
 
@@ -169,7 +169,7 @@ describe('Teste de Tratamento de Erro', () => {
 });
 ```
 
-## 🔍 Recursos Avançados
+## Recursos Avançados
 
 ### Validação de Múltiplas Requisições
 
@@ -204,7 +204,7 @@ cy.intercept('POST', '/login', (req) => {
 }).as('postLogin');
 ```
 
-## ⚙️ Configuração
+## Configuração
 
 O arquivo `cypress.config.js` contém as configurações principais:
 
@@ -212,13 +212,13 @@ O arquivo `cypress.config.js` contém as configurações principais:
 - **Browser Launch Events**: Configuração especial para Chrome com debugging
 - **Tasks**: Utilitários customizados como `tabNavigation`
 
-## 📚 Documentação Oficial
+## Documentação Oficial
 
 - [Documentação Cypress Intercept](https://docs.cypress.io/api/commands/intercept)
 - [Cypress Best Practices](https://docs.cypress.io/guides/references/best-practices)
 - [Network Requests no Cypress](https://docs.cypress.io/guides/guides/network-requests)
 
-## 🤝 Contribuindo
+## Contribuindo
 
 Contribuições são bem-vindas! Para contribuir:
 
@@ -228,18 +228,18 @@ Contribuições são bem-vindas! Para contribuir:
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-## 📄 Licença
+## Licença
 
 Este projeto está sob a licença **ISC**. Veja mais detalhes em [ISC License](https://opensource.org/licenses/ISC).
 
-## 👤 Autor
+## Autor
 
 **Pedro Ricardo**
 
 - GitHub: [@Pedro001979](https://github.com/Pedro001979)
 - Repositório: [cy-intercept](https://github.com/Pedro001979/cy-intercept)
 
-## 💬 Suporte
+## Suporte
 
 Se tiver dúvidas ou encontrar problemas, abra uma issue no repositório.
 
